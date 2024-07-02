@@ -1,3 +1,5 @@
+// I added an option for the user to add their own prompt and then immediately write the entry to it after.
+
 using System;
 
 class Program
@@ -23,6 +25,7 @@ class Program
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
             Console.WriteLine("5. Quit");
+            Console.WriteLine("6. Write personalized prompt");
 
             Console.Write("What would you like to do?: ");
             string userDecisionString = Console.ReadLine();
@@ -82,6 +85,26 @@ class Program
                 {
                     Console.WriteLine("journal.txt is the only file available");
                 }
+            }
+            else if (userDecision ==6)
+            {
+                Console.WriteLine("Enter your prompt:");
+                string userPrompt = Console.ReadLine();
+                entry._promptText = userPrompt;
+                Console.WriteLine(entry._promptText);
+                Console.Write(">");
+                string currentEntry = Console.ReadLine();
+            
+                if (currentEntry == "")
+                {
+                    entry._entryText = "no entry";
+                }
+                else
+                {
+                    entry._entryText = currentEntry;
+                }
+                entry._date = currentDate;
+                journal.SaveToFile(entry._date, entry._promptText, entry._entryText);
             }
             
         }
