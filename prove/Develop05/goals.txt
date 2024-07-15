@@ -1,0 +1,4 @@
+100
+Simple Goal|Play piano in sacrament meeting|Learn and play a song in sacrament meeting|100|True
+Eternal Goal|Read Scriptures|Read scriptures every morning|15|0
+Checklist Goal|Practice piano|Practice piano for 30 min|20|5|100|0
