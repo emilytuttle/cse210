@@ -24,9 +24,9 @@ public class Event
         Console.WriteLine($"{_address}");
     }
 
-     public void ListShortDetails(string eventType)
+     public void ListShortDetails()
     {
         Console.WriteLine("Short Details");
-        Console.WriteLine($"Event: {eventType}, {_eventTitle}, {_date}");
+        Console.WriteLine($"Event: {this.GetType().Name}, {_eventTitle}, {_date}");
     }
 }

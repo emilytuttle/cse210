@@ -11,21 +11,21 @@ class Program
         OutdoorGatherings outdoorGathering = new OutdoorGatherings("Company BBQ", "Join us to celebrate 10 years of business! We're eating hotdogs.", "September 31, 2025", "1:23am", "4903 S Company Way", "rainy");
 
         
-        lecture.ListShortDetails("Lecture");
+        lecture.ListShortDetails();
         Console.WriteLine("--------------");
         lecture.DisplayStandardDetails();
         Console.WriteLine("--------------");
         lecture.DisplayFullDetails();
         Console.WriteLine("-----------------------------------------------");
 
-        reception.ListShortDetails("Reception");
+        reception.ListShortDetails();
         Console.WriteLine("--------------");
         reception.DisplayStandardDetails();
         Console.WriteLine("--------------");
         reception.DisplayFullDetails();
         Console.WriteLine("-----------------------------------------------");
 
-        outdoorGathering.ListShortDetails("Outdoor Gathering");
+        outdoorGathering.ListShortDetails();
         Console.WriteLine("--------------");
         outdoorGathering.DisplayStandardDetails();
         Console.WriteLine("--------------");
